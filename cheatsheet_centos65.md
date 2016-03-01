@@ -15,3 +15,19 @@ Allow incoming ssh connections on eth0
 ```centos65
 iptables -A INPUT -i eth0 -p tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
 ```
+
+ifup eth1 -> config not found
+
+```centos65
+Make a copy of the ifcfg-eth0 file and name it ifcfg-eth1
+Open ifcfg-eth1 in a text editor (e.g. vi)
+Update the DEVICE entry.
+Update (or remove) the HWADDR entry
+Remove the UUID entry (if it is there)
+```
+
+hostname -f returns "host unknown"
+
+```centos65
+add line to /etc/hosts
+```
