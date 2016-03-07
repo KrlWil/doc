@@ -31,3 +31,30 @@ hostname -f returns "host unknown"
 ```centos65
 add line to /etc/hosts
 ```
+dhcpd: no subnet declaration
+
+```centos65
+add pool for an interface
+```
+dhcpd: Can't chown new lease file: Operation not permitted
+```centos65
+setenforce 0
+service dhcpd start
+setenforce 1
+```
+
+```centos65
+
+```
+
+```centos65
+
+```
+
+```centos65
+
+```
+
+```centos65
+
+```
