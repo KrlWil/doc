@@ -44,6 +44,11 @@ Get default gateway
 route -n | grep UG
 ```
 
+Stop all interfaces
+```
+service network restart
+```
+
 ## YUM
 
 Configuring YUM to use proxy

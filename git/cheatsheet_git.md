@@ -18,3 +18,8 @@ Unstage
 ```
 git reset <FILE>
 ```
+
+Switch branches
+```
+git checkout *branch*
+```
