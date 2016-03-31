@@ -1,4 +1,6 @@
-paste in tftpboot/pxelinux.cfg
+#Step by step PXE
+
+1. set up pxelinux.cfg/default
 
 ```
 default menu.c32
@@ -13,3 +15,10 @@ append initrd=centos7/images/pxeboot/initrd.img method=http://172.20.1.185/cento
 label 2
 menu label ^2) Boot from local drive localboot
 ```
+
+2. mount iso
+```
+mount -o loop /root/CentOS-7-x86_64-Minimal-1511.iso /var/lib/tftpboot/centos7/
+```
+3. boot from lan
+4. follow instructions
