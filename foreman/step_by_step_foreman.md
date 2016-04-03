@@ -18,6 +18,8 @@ yum -y install epel-release http://yum.theforeman.org/releases/1.10/el6/x86_64/f
 5. Run foreman installer
 `foreman-installer`
 
+5. `puppet agent --test`
+
 6. go to foreman
 
 7. install modules (forge.puppetlabs.com)
@@ -27,6 +29,8 @@ yum -y install epel-release http://yum.theforeman.org/releases/1.10/el6/x86_64/f
 9. configure->classes-> import from ... -> prod+dev
 
 10. hosts -> host.domain -> edit -> puppet classes -> tftp+xinetd+stdlib
+
+10. Set selinux to permissive `setenforce 0`
 
 11. Set up provisioning via `Infrastructure->Provisioning setup`
 
