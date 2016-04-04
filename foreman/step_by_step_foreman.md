@@ -44,7 +44,7 @@ yum -y install epel-release http://yum.theforeman.org/releases/1.10/el6/x86_64/f
 
 16. Infrastructure -> Compute resources -> New compute resource
 
-17. Vcenter/Server = dlc-prdvcs03
+17. Fill in Vcenter/Server
 
 18. Infrastructure -> Compute profiles -> New compute profile
 
