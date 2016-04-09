@@ -33,3 +33,9 @@ Install vmware provider
 ```
 yum install foreman-vmware
 ```
+
+Unable to delete dhcp lease
+
+add` :dhcp_subnets: [192.168.101.0/255.255.255.0]`
+to /etc/foreman-proxy/settings.d/dhcp.yml
+
