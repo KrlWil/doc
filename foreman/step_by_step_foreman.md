@@ -51,3 +51,7 @@ yum -y install epel-release http://yum.theforeman.org/releases/1.10/el6/x86_64/f
 19. Configure operating system with appropriate templates/partition table (Kickstarts for Centos)
 
 20. Hosts -> new host
+
+21. Add virtualhost to `/etc/httpd/conf.d/05-foreman.conf` and `/etc/httpd/conf.d/05-foreman-ssl.conf`
+
+22.  puppet cert --generate repo.intern.devpup01.dlc.accenture.com

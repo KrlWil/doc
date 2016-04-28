@@ -1,0 +1,5 @@
+List virtualhosts
+```
+httpd -S
+```
+

@@ -39,3 +39,9 @@ Unable to delete dhcp lease
 add` :dhcp_subnets: [192.168.101.0/255.255.255.0]`
 to /etc/foreman-proxy/settings.d/dhcp.yml
 
+
+unable to set dhcp entry
+```
+delete entry in /var/lib/dhcpd/dhcp.leases
+restart dhcpd
+```
