@@ -49,6 +49,11 @@ Stop all interfaces
 service network restart
 ```
 
+Check if port is open
+```
+nmap localhost
+```
+
 ## YUM
 
 Configuring YUM to use proxy

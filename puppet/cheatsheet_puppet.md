@@ -28,3 +28,8 @@ Trust Puppet CA
 ```
 copy /var/lib/puppet/ssl/certs/ca.pem  to /var/lib/foreman/public/ca.crt and install in Trusted Root Certification authorities
 ```
+
+invalid method "..."
+```
+Check if right puppet package is installed
+```

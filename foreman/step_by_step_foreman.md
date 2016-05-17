@@ -13,12 +13,12 @@ yum -y install epel-release http://yum.theforeman.org/releases/1.10/el6/x86_64/f
 3. Install foreman installer
 `yum -y install foreman-installer`
 
-4. Add line to etc/hosts
+4. Add line to /etc/hosts
 
 5. Run foreman installer
 `foreman-installer`
 
-5. `puppet agent --test`
+5. `puppet agent -t`
 
 6. go to foreman
 
@@ -28,7 +28,7 @@ yum -y install epel-release http://yum.theforeman.org/releases/1.10/el6/x86_64/f
 
 9. configure->classes-> import from ... -> prod+dev
 
-10. hosts -> host.domain -> edit -> puppet classes -> tftp+xinetd+stdlib
+10. hosts -> host.domain -> edit -> puppet classes
 
 10. Set selinux to permissive `setenforce 0`
 
@@ -54,4 +54,12 @@ yum -y install epel-release http://yum.theforeman.org/releases/1.10/el6/x86_64/f
 
 21. Add virtualhost to `/etc/httpd/conf.d/05-foreman.conf` and `/etc/httpd/conf.d/05-foreman-ssl.conf`
 
-22.  puppet cert --generate repo.intern.devpup01.dlc.accenture.com
+22. puppet cert --generate repo.intern.devpup01.dlc.accenture.com
+
+23. Remove yum update from kickstart default
+
+24. Add local repos to kickstart default
+
+25. Make new host
+
+26. Run 'puppet agent -t' on host
